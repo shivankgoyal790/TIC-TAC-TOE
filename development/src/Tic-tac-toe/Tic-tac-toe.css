@@ -16,7 +16,6 @@ width: 100%;
 .box{
 display: flex;
 width: 50%;
-height: 50%;
 flex-wrap: wrap;
 color: white;
 text-align: center;
@@ -25,17 +24,25 @@ margin-left: 25%;
 
 }
 
+#win1{
+    display: none;
+}
+#win2{
+    display: none;
+}
+
 .flex-box{
 
 flex:30%;
-padding: 50px 10px;
+padding: 50px 5px;
 border: 2px solid #f3ca20;
 background-color: rgb(29, 29, 29);
-font-size: 30px;
-
+font-size: 26px;
+color: rgb(29, 29, 29);
 }
 
 .flex-box:hover{
     background-color: rgb(53, 53, 53);
     cursor: pointer;
+    color: rgb(53, 53, 53);
 }

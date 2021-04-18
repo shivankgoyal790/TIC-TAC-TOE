@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(224, 223, 223);
+    margin: 0;
+}
+
+.tic-container{
+width: 100%;
+}
+
+.heading{
+    background-color: #f3ca20;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.box{
+display: flex;
+width: 50%;
+height: 50%;
+flex-wrap: wrap;
+color: white;
+text-align: center;
+margin-left: 25%;
+
+
+}
+
+.flex-box{
+
+flex:30%;
+padding: 50px 10px;
+border: 2px solid #f3ca20;
+background-color: rgb(29, 29, 29);
+font-size: 30px;
+
+}
+
+.flex-box:hover{
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}

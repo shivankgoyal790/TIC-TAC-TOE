@@ -20,19 +20,19 @@ class Tictactoe extends React.Component{
         </div>
         <div className="tic-container">
           
-            <h1 className="heading"> TIC-TAC-TOE</h1>
+            <h1 className="heading">❌TIC-TAC-TOE 🔴</h1>
             <h1>👨 PLAYER 1 : ❌ </h1>
             <h1>👨‍ PLAYER 2 : 🔴 </h1>
             <div className="box">
-                <div id="0" className="flex-box" onClick = {() => this.shoot("0")}>2</div>
-                <div id="1" className="flex-box" onClick = {() => this.shoot("1")}>2</div>
-                <div id="2" className="flex-box" onClick = {() => this.shoot("2")}>1</div>
-                <div id="3" className="flex-box" onClick = {() => this.shoot("3")}>3</div>
-                <div id="4" className="flex-box" onClick = {() => this.shoot("4")}>3</div>
-                <div id="5" className="flex-box" onClick = {() => this.shoot("5")}>3</div>
-                <div id="6" className="flex-box" onClick = {() => this.shoot("6")}>3</div>
-                <div id="7" className="flex-box" onClick = {() => this.shoot("7")}>4</div>
-                <div id="8" className="flex-box" onClick = {() => this.shoot("8")}>4</div>
+                <div id="0" className="flex-box" onClick = {() => this.shoot("0")}></div>
+                <div id="1" className="flex-box" onClick = {() => this.shoot("1")}></div>
+                <div id="2" className="flex-box" onClick = {() => this.shoot("2")}></div>
+                <div id="3" className="flex-box" onClick = {() => this.shoot("3")}></div>
+                <div id="4" className="flex-box" onClick = {() => this.shoot("4")}></div>
+                <div id="5" className="flex-box" onClick = {() => this.shoot("5")}></div>
+                <div id="6" className="flex-box" onClick = {() => this.shoot("6")}></div>
+                <div id="7" className="flex-box" onClick = {() => this.shoot("7")}></div>
+                <div id="8" className="flex-box" onClick = {() => this.shoot("8")}></div>
 
 
 
@@ -96,7 +96,7 @@ class Tictactoe extends React.Component{
         const h = document.getElementById("7");
         const i = document.getElementById("8");
 
-        if(a.innerHTML === b.innerHTML && b.innerHTML === c.innerHTML)
+        if(a.innerHTML === b.innerHTML && b.innerHTML === c.innerHTML && a.innerHTML !== "")
         {
             if(a.innerHTML === "🔴"){
                 document.getElementById("who-won").style.display = "block";
@@ -108,60 +108,86 @@ class Tictactoe extends React.Component{
             }
         }
 
-        else if(a.innerHTML === e.innerHTML && e.innerHTML === i.innerHTML){
-            if(a.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
+        else if(a.innerHTML === e.innerHTML && e.innerHTML === i.innerHTML && a.innerHTML !== ""){
+            if(a.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         
         }
 
-        else if(a.innerHTML === d.innerHTML && d.innerHTML === g.innerHTML){
-            if(a.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
+        else if(a.innerHTML === d.innerHTML && d.innerHTML === g.innerHTML && a.innerHTML !== ""){
+            if(a.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         
         }
 
-        else if(b.innerHTML === e.innerHTML && e.innerHTML === f.innerHTML){
-            if(b.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
+        else if(b.innerHTML === e.innerHTML && e.innerHTML === f.innerHTML && b.innerHTML !== ""){
+            if(b.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         
         }
 
-        else if(g.innerHTML === h.innerHTML && h.innerHTML === i.innerHTML){
-            if(g.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
+        else if(g.innerHTML === h.innerHTML && h.innerHTML === i.innerHTML && g.innerHTML !== ""){
+            if(g.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         
         }
 
-        else if(g.innerHTML === e.innerHTML && e.innerHTML === c.innerHTML){
-            if(g.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
+        else if(g.innerHTML === e.innerHTML && e.innerHTML === c.innerHTML && g.innerHTML !== ""){
+            if(g.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         
         }
 
-        else if(b.innerHTML === e.innerHTML && e.innerHTML === h.innerHTML){
-            if(b.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
-        
+        else if(b.innerHTML === e.innerHTML && e.innerHTML === h.innerHTML && b.innerHTML !== ""){
+            if(b.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         }
 
-        else if(c.innerHTML === f.innerHTML && f.innerHTML === i.innerHTML){
-            if(c.innerHTML === "🔴")
-            document.getElementById("win2").style.display = "inline";
-            else
-            document.getElementById("win1").style.display = "inline";
-        
+        else if(c.innerHTML === f.innerHTML && f.innerHTML === i.innerHTML && c.innerHTML !== ""){
+            if(c.innerHTML === "🔴"){
+                document.getElementById("who-won").style.display = "block";
+                document.getElementById("win2").style.display = "block";
+            }
+            else{
+            document.getElementById("who-won").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+            }
         }
 }
 
